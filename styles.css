@@ -45,7 +45,9 @@ nav ul li a{
     border-radius: 10px;
 }
 
-
+#theme-toggle:hover{
+    opacity:0.8;
+}
 
 
 
