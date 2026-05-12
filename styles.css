@@ -183,8 +183,8 @@ nav ul li a{
 }
 
 .book-item{
-    background-color: rgb(212, 218, 220);
     padding: 20px;
+    background-color: rgb(212, 218, 220);
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
@@ -211,3 +211,37 @@ nav ul li a{
     background-color: #ffb703;
     color: black;
 }
+
+/*Author Section*/
+#authors{
+    padding: 60px 20px;
+    background-color:rgb(212, 218, 220);
+}
+#authors h2{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+.author-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:30px;
+    justify-content: center;
+}
+
+.author-card{
+    width: 430px;
+    padding: 10px;
+    background-color: antiquewhite;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.author-card img{
+    width:150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+} 
