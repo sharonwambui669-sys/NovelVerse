@@ -207,3 +207,7 @@ nav ul li a{
     border-radius: 5px;
     cursor: pointer;
 }
+.book-item button:hover{
+    background-color: #ffb703;
+    color: black;
+}
