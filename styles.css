@@ -23,6 +23,17 @@ header {
     background-position: center;
     background-repeat: no-repeat;
 }
+.logo h1{
+    font-size:32px;
+    letter-spacing: 3px;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:20px;
+}
+
 
 
 
