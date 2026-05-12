@@ -39,7 +39,6 @@ nav ul li a{
 #theme-toggle{
     padding:15px 25px;
     border:none;
-    background-color: #231e11;
     color:black;
     cursor: pointer;
     border-radius: 10px;
@@ -48,6 +47,8 @@ nav ul li a{
 #theme-toggle:hover{
     opacity:0.8;
 }
+
+
 
 
 
