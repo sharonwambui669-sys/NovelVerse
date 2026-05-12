@@ -87,7 +87,54 @@ nav ul li a{
     border-radius: 5px;
 }
 /*Featured books*/
+.featured-books{
+    padding:60px 20px;
+    text-align: center;
+}
+.featured-books h2{
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+.book-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap:30px
+}
+.book-card{
+    padding:20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+.book-card:hover{
+    transform: translateY(-10px);
+}
 
+.book-card img{
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.book-card h3{
+    margin-top: 18px;
+    font-size: 22px;
+}
 
-
+.book-card p{
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.book-card button{
+    padding:10px 20px;
+    border:none;
+    background-color: #1e1e2f;
+    cursor: pointer;
+    border-radius: 5px;
+    color:white;
+}
+.book-card button:hover{
+    background-color: #ffb703;
+    color: black;
+}
 
