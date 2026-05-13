@@ -352,5 +352,42 @@ nav ul li a{
 }
 
 /*Footer*/
+footer{
+    background-color: #1e1e2f;
+    color: white;
+    padding: 50px 20px;
+}
+
+.footer-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap:30px;
+}
+.footer-section h3{
+    margin-bottom: 15px;
+    
+}
+
+.footer-section ul{
+    list-style: none;
+}
+.footer-section ul li{
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer-section ul li a:hover{
+    color:#ffb703;
+}
+.footer-bottom{
+    text-align: center;
+    margin-top: 40px;
+    border-top: 1px solid #444;
+    padding-top: 20px;
+}
 
 
