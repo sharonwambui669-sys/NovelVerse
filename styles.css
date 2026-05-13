@@ -390,4 +390,37 @@ footer{
     padding-top: 20px;
 }
 
+/*Responsive Design*/
+@media(max-width:768px){
+header{
+    flex-direction: column;
+    gap:20px;
 
+}
+}
+nav ul{
+    flex-direction: column;
+    gap: 20px;
+}
+
+.hero-text h2{
+font-size: 40px;
+}
+
+.hero-text input{
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.newsletter input{
+    width:100%;
+    margin-bottom: 15px;
+}
+
+.book-container,
+.author-container,
+.testimonial-container,
+.genre-container{
+    flex-direction: column;
+    align-items: center;
+}
