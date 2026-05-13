@@ -262,3 +262,26 @@ nav ul li a{
     justify-content: center;
 }
 
+/*Newsletter*/
+.newsletter{
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #1e1e2f;
+    color: #edf2f4;
+}
+
+.newsletter input{
+    padding: 15px;
+    width: 250px;
+    border: none;
+    border-radius: 5px;
+}
+.newsletter button{
+    padding: 15px 18px;
+    border: none;
+    background-color: #ffb703;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/**/
