@@ -15,3 +15,18 @@ if(document.body.classList.contains("dark-mode")){
 });
 
 //Search Functionality
+const searchInput=document.querySelector(".hero-text input");
+const searchButton=document.querySelector(".hero-text button");
+
+searchButton.addEventListener("click",function(){
+    const searchValue=searchInput.value.toLowerCase();
+
+    if(searchValue===````){
+        alert("Please enter a book title.");
+        return;
+    }
+    alert(`Searching for:${searchValue}`);
+});
+
+//Book Data Array
+const books
