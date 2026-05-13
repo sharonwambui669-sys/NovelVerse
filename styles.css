@@ -334,5 +334,23 @@ nav ul li a{
     background-color: #ffb703;
     color: black;
 }
+/*FAQ section*/
+.faq-section{
+    padding: 60px 20px;
+    background-color: #edf2f4;
+}
+.faq-section h2{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.faq-item{
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/*Footer*/
 
 
