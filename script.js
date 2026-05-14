@@ -185,3 +185,22 @@ if(currentHour<12){
     console.log("Good Evening Reader");
 }
 
+//Testimonial Rotation
+const testimonials=[
+    "NovelVerse helped me discover books I truly enjoy.",
+    "The website is easy to use and very interactive.",
+    "I love the dark mode and genre filtering features.",
+];
+
+let testimonialIndex=0;
+function rotateTestimonials(){
+    console.log(testimonials[testimonialIndex]);
+    testimonialIndex++;
+
+    if(testimonialIndex>=testimonials.length){
+        testimonialIndex=0;
+    }
+}
+
+setInterval(rotateTestimonials,4000);
+
