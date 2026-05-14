@@ -318,3 +318,8 @@ function suggestRandomBook() {
 
 suggestRandomBook();
 
+// Window Resize Detection
+window.addEventListener("resize", function () {
+
+    console.log(`Window width: ${window.innerWidth}`);
+});
