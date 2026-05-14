@@ -331,3 +331,8 @@ window.addEventListener("keydown", function(event) {
     console.log(`Key pressed: ${event.key}`);
 });
 
+// Book Counter
+const totalBooks = books.length;
+
+console.log(`Total Books Available: ${totalBooks}`);
+
