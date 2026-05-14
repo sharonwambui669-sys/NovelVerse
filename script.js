@@ -57,6 +57,19 @@ books.forEach(function(book){console.log(book.title);
 });
 
 //Genre Filtering
-c
+const genreCards=
+document.querySelectorAll(".genre-card");
+
+genreCards.forEach(function(card){
+    card.addEventListener("click",function(){
+        const selectGenre=card.textContent;
+        const filteredBooks=books.filter(function(book){
+            return book.genre.includes(selectedGenre);
+        })
+
+        console.log(filteredBooks);
+        alert(`Showing books for ${selectedGenre}`);
+    })
+})
 
 
