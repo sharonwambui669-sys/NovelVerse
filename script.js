@@ -160,3 +160,27 @@ newsletterForm.addEventListener("submit",function(event){
 });
 
 //Smooth Scrolling
+const navlinks=document.querySelectorAll("nav ul li a");
+navlinks.forEach(function(link){
+    link.addEventListener("click",function(event){
+        event.preventDefault();
+        const targetId=link.getAttribute("href");
+        const targetSection=
+        document.querySelector(targetId);
+
+        targetSection.scrollIntoView({
+            behavior:"smooth"
+        });
+    });
+});
+
+//Dynamic Greeting
+const currentHour=new Date().getHours();
+
+if(currentHour<12){
+    console.log("Good Morning Reader");
+}else if(currentHour<18){
+    console.log("Good Afternoon Reader");
+}else{
+    console.log("Good Evening Reader");
+}
