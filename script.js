@@ -323,3 +323,11 @@ window.addEventListener("resize", function () {
 
     console.log(`Window width: ${window.innerWidth}`);
 });
+
+
+// Keyboard Event Example
+window.addEventListener("keydown", function(event) {
+
+    console.log(`Key pressed: ${event.key}`);
+});
+
