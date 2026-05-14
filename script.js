@@ -294,3 +294,15 @@ messageBox.addEventListener("input", function () {
     counter.textContent = `Characters: ${messageBox.value.length}`;
 });
 
+// Loading Animation Simulation
+function simulateLoading() {
+
+    console.log("Loading books...");
+
+    setTimeout(function () {
+        console.log("Books loaded successfully.");
+    }, 2000);
+}
+
+simulateLoading();
+
