@@ -81,4 +81,61 @@ readButtons.forEach(function(button){
         alert("Opening full book description...");
     })  
 })
+//Add to library buttons
+const libraryButtons=
+document.querySelectorAll(".book-item button");
+libraryButtons.forEach(function(button){
+
+    button.addEventListener("click",function(){ 
+        button.textContent="Added";
+    button.style.backgroundColor="green";
+    alert("Book added to your library");
+});
+   
+});
+
+//Contact Form Validation
+const contactForm=
+document.querySelector(".contact-form");
+contactForm.addEventListener("submit",function(event){
+    event.preventDefault();
+
+    const name=
+    document.querySelector("input[type='text']").value;
+    const email=
+    document.querySelector("input[type='email']").value;
+    const phone=
+    document.querySelector("input[type='tel']").value;
+    const message=
+    document.querySelector("textarea").value;
+
+    if(name===````){
+        alert("Please enter your full name.");
+        return;
+    }
+
+    if(email===````){
+        alert("Please enter email.");
+        return;
+    }
+
+    if(!email.includes("@")){
+        alert("Please enter a valid email address.");
+        return;
+    }
+
+    if(phone===````){
+        alert("Please enter your phone number.");
+        return;
+    }
+
+    if(message===````){
+        alert("Please enter your message.");
+        return;
+    }
+
+    alert("Message sent successfully.");
+
+    contactForm.requestFullscreen();
+})
 
