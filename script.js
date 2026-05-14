@@ -215,3 +215,13 @@ genreCards.forEach(function(card) {
         card.style.transform = "scale(1)";
     });
 });
+
+// Book Rating Interaction
+const ratings = document.querySelectorAll(".book-item span");
+
+ratings.forEach(function(rating) {
+
+    rating.addEventListener("click", function () {
+        alert(`Book Rating: ${rating.textContent}`);
+    });
+});
