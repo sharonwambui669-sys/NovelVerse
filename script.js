@@ -225,3 +225,20 @@ ratings.forEach(function(rating) {
         alert(`Book Rating: ${rating.textContent}`);
     });
 });
+
+// FAQ Interaction
+const faqItems = document.querySelectorAll(".faq-item");
+
+faqItems.forEach(function(item) {
+
+    item.addEventListener("click", function () {
+
+        item.classList.toggle("active");
+
+        if (item.classList.contains("active")) {
+            item.style.backgroundColor = "#ffb703";
+        } else {
+            item.style.backgroundColor = "white";
+        }
+    });
+});
