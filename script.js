@@ -242,3 +242,9 @@ faqItems.forEach(function(item) {
         }
     });
 });
+
+// Welcome Message
+window.addEventListener("load", function () {
+
+    console.log("Welcome to NovelVerse Website");
+});
