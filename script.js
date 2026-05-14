@@ -306,3 +306,15 @@ function simulateLoading() {
 
 simulateLoading();
 
+// Random Book Suggestion
+function suggestRandomBook() {
+
+    const randomIndex = Math.floor(Math.random() * books.length);
+
+    const randomBook = books[randomIndex];
+
+    console.log(`Suggested Book: ${randomBook.title}`);
+}
+
+suggestRandomBook();
+
