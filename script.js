@@ -29,4 +29,34 @@ searchButton.addEventListener("click",function(){
 });
 
 //Book Data Array
-const books
+const books=[
+    {
+        title:"The Lost World",
+        genre:"Adventure",
+        rating:4.8
+    }
+    {
+        title:"Broken Memories",
+        genre:"Drama",
+        rating:4.5
+    }
+    {
+        title:"Dark Secrets",
+        genre:"Thriller",
+        rating:4.6
+    }
+    {
+        title:"Galaxy Warriors",
+        genre:"Science Fiction",
+        rating:4.7
+    }
+];
+
+//Display Books in console
+books.forEach(function(book){console.log(book.title);
+});
+
+//Genre Filtering
+c
+
+
