@@ -248,3 +248,35 @@ window.addEventListener("load", function () {
 
     console.log("Welcome to NovelVerse Website");
 });
+
+
+// Scroll To Top Button Creation
+const scrollButton = document.createElement("button");
+
+scrollButton.textContent = "Top";
+scrollButton.id = "scroll-top";
+
+document.body.appendChild(scrollButton);
+
+scrollButton.style.position = "fixed";
+scrollButton.style.bottom = "20px";
+scrollButton.style.right = "20px";
+scrollButton.style.padding = "10px 15px";
+scrollButton.style.display = "none";
+scrollButton.style.cursor = "pointer";
+
+window.addEventListener("scroll", function () {
+    if (window.scrollY > 300) {
+        scrollButton.style.display = "block";
+    } else {
+        scrollButton.style.display = "none";
+    }
+});
+
+scrollButton.addEventListener("click", function () {
+
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+});
