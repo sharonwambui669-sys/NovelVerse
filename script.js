@@ -72,4 +72,13 @@ genreCards.forEach(function(card){
     })
 })
 
+//Read More Buttons
+const readButtons=
+document.querySelectorAll(".book-card button");
+readButtons.forEach(function(button){
+
+    button.addEventListener("click",function(){
+        alert("Opening full book description...");
+    })  
+})
 
