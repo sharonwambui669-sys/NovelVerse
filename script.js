@@ -139,3 +139,24 @@ contactForm.addEventListener("submit",function(event){
     contactForm.requestFullscreen();
 })
 
+//Newsletter Subscription
+const newsletterForm=
+document.querySelector(".newsletter form");
+
+newsletterForm.addEventListener("submit",function(event){
+    event.preventDefault();
+
+    const newsletterEmail=
+    newsletterForm.querySelector("input").value;
+
+    if(newsletterEmail===````){
+        alert("Please enter your email.")
+        return;
+    }
+
+    alert("Thank you for subscribing.");
+
+    newsletterForm.reset();
+});
+
+//Smooth Scrolling
