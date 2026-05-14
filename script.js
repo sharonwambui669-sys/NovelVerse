@@ -204,3 +204,14 @@ function rotateTestimonials(){
 
 setInterval(rotateTestimonials,4000);
 
+// Hover Animation on Genre Cards
+genreCards.forEach(function(card) {
+
+    card.addEventListener("mouseenter", function () {
+        card.style.transform = "scale(1.1)";
+    });
+
+    card.addEventListener("mouseleave", function () {
+        card.style.transform = "scale(1)";
+    });
+});
