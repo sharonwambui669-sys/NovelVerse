@@ -280,3 +280,17 @@ scrollButton.addEventListener("click", function () {
         behavior: "smooth"
     });
 });
+
+
+// Character Counter for Message Box
+const messageBox = document.querySelector("textarea");
+
+const counter = document.createElement("p");
+
+messageBox.parentElement.appendChild(counter);
+
+messageBox.addEventListener("input", function () {
+
+    counter.textContent = `Characters: ${messageBox.value.length}`;
+});
+
