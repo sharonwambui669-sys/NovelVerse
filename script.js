@@ -164,4 +164,69 @@ newsletterForm.addEventListener("submit", function(event) {
 const navLinks = document.querySelectorAll("nav ul li a");
 
 navLinks.forEach(function(link) {
-    
+    link.addEventListener("click", function(event) {
+
+        const href = link.getAttribute("href");
+
+        if (href.startsWith("#")) {
+
+            event.preventDefault();
+
+            const section =
+            document.querySelector(href);
+
+            section.scrollIntoView({
+                behavior: "smooth"
+            });
+        }
+    });
+});
+
+// ===============================
+// FAQ Interaction
+// ===============================
+
+const faqItems =
+document.querySelectorAll(".faq-item");
+
+faqItems.forEach(function(item) {
+
+    item.addEventListener("click", function () {
+
+        item.classList.toggle("active");
+
+        if (item.classList.contains("active")) {
+
+            item.style.backgroundColor = "#ffb703";
+
+        } else {
+
+            item.style.backgroundColor = "white";
+        }
+    });
+});
+
+// ===============================
+// Scroll To Top Button
+// ===============================
+
+const topButton =
+document.createElement("button");
+
+topButton.innerHTML = "Top";
+
+document.body.appendChild(topButton);
+
+topButton.style.position = "fixed";
+topButton.style.bottom = "20px";
+topButton.style.right = "20px";
+topButton.style.padding = "10px 15px";
+topButton.style.display = "none";
+topButton.style.cursor = "pointer";
+
+// Show Button on Scroll
+window.addEventListener("scroll", function () {
+
+    if (window.scrollY > 300) {
+
+        topButton.style.display = "block";
