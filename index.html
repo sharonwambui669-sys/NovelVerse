@@ -17,10 +17,18 @@
                 <ul>
                 
                     <li><a  href="#home">Home</a></li>
-                        <li><a href="#genres">Genres</a></li>
-                            <li><a href="#books">Books</a></li>
+
+                        <li><a href="#genres">Genres
+
+                        </a>
+                    </li>
+                           
+                           <li><a href="#books">Books</a></li>
+
                                 <li><a href="#authors">Authors</a></li>
+
                                     <li><a href="#reviews">Reviews</a></li>
+
                                         <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -239,24 +247,27 @@
             <form class="contact-form">
 
                 <div class="form-group">
-                    <label>Full Name</label>
-                    <input type="text"placeholder="Enter your full name">
+                    <label for="full-name">Full Name</label>
+                    <input type="text"id="full-name"name="full_name"placeholder="Enter your full name">
                 </div>
 
                 <div class="form-group">
-                    <label>Email Address</label>
-                    <input type="email"placeholder="Enter your email">
+                    <label for="email">Email Address</label>
+                    <input type="email"id="email"name="email_address"placeholder="Enter your email">
                 </div>
 
                 <div class="form-group">
-                    <label>Phone Number</label>
-                    <input type="tel"placeholder="Enter your phone number">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel"id="phone"name="phone_number"placeholder="Enter your phone number">
                 </div>
 
                 <div class="form-group">
-                    <label>Message</label>
-                    <textarea rows="6"placeholder="Write your
+                    <label for="message">Message</label>
+                    <textarea id="message"name="message"placeholder="Write your
                      message here"></textarea>
+                     </div>
+                    <button type="submit">Submit</button>
+                     <form action=""your-endpoint-url"method="POST"></form>
                 </div>
 
             </form>

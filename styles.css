@@ -39,12 +39,14 @@ nav ul li a{
 }
 
 nav ul{
-    display: flex;
+    display: flexbox;
     gap:60px;
     list-style: none;
 }
 
-
+nav ul li a:hover{
+    color:#000;
+}
 #theme-toggle{
     padding:15px 25px;
     border:none;
