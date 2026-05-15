@@ -70,3 +70,27 @@ const libraryButtons = document.querySelectorAll(".book-item button");
 libraryButtons.forEach(function(button) {
 
     button.addEventListener("click", function () {
+           button.textContent = "Added";
+        button.style.backgroundColor = "green";
+
+        alert("Book added to library");
+    });
+});
+
+// ===============================
+// Contact Form Validation
+// ===============================
+
+const contactForm = document.querySelector(".contact-form");
+
+contactForm.addEventListener("submit", function(event) {
+
+    event.preventDefault();
+
+    const name =
+    document.querySelector("input[type='text']").value;
+
+    const email =
+    document.querySelector("input[type='email']").value;
+
+    const phone =
