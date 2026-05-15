@@ -230,3 +230,50 @@ window.addEventListener("scroll", function () {
     if (window.scrollY > 300) {
 
         topButton.style.display = "block";
+        } else {
+
+        topButton.style.display = "none";
+    }
+});
+
+// Scroll to Top
+topButton.addEventListener("click", function () {
+
+    window.scrollTo({
+
+        top: 0,
+        behavior: "smooth"
+    });
+});
+
+// ===============================
+// Character Counter
+// ===============================
+
+const messageBox =
+document.querySelector("textarea");
+
+const counter =
+document.createElement("p");
+
+messageBox.parentElement.appendChild(counter);
+
+messageBox.addEventListener("input", function () {
+
+    counter.textContent =
+    `Characters: ${messageBox.value.length}`;
+});
+
+// ===============================
+// Dynamic Greeting
+// ===============================
+
+const currentHour = new Date().getHours();
+
+if (currentHour < 12) {
+
+    console.log("Good Morning Reader");
+
+} else if (currentHour < 18) {
+
+    console.log("Good Afternoon Reader");
