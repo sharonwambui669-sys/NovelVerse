@@ -47,3 +47,26 @@ genreCards.forEach(function(card) {
     });
 });
 
+// ===============================
+// Read More Buttons
+// ===============================
+
+const readButtons = document.querySelectorAll(".book-card button");
+
+readButtons.forEach(function(button) {
+
+    button.addEventListener("click", function () {
+
+        alert("Opening full book description...");
+    });
+});
+
+// ===============================
+// Add To Library Buttons
+// ===============================
+
+const libraryButtons = document.querySelectorAll(".book-item button");
+
+libraryButtons.forEach(function(button) {
+
+    button.addEventListener("click", function () {
