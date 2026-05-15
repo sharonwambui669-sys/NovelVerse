@@ -94,3 +94,4 @@ contactForm.addEventListener("submit", function(event) {
     document.querySelector("input[type='email']").value;
 
     const phone =
+    
