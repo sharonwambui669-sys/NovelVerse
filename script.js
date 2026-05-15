@@ -18,3 +18,32 @@ themeToggle.addEventListener("click", function () {
 
 const searchInput = document.querySelector(".hero-text input");
 const searchButton = document.querySelector(".hero-text button");
+searchButton.addEventListener("click", function () {
+
+    const searchValue = searchInput.value.toLowerCase();
+
+    if (searchValue === "") {
+
+        alert("Please enter a book title.");
+        return;
+    }
+
+    alert(`Searching for "${searchValue}"`);
+});
+
+// ===============================
+// Genre Filtering
+// ===============================
+
+const genreCards = document.querySelectorAll(".genre-card");
+
+genreCards.forEach(function(card) {
+
+    card.addEventListener("click", function () {
+
+        const genre = card.textContent;
+
+        alert(`Showing ${genre} books`);
+    });
+});
+
