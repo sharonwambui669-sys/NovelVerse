@@ -25,16 +25,25 @@ header {
     
 }
 
-nav ul li a:hover{
-    color:#282317;
-
+nav ul li a:hover::after{
+    width:100%
 }
 
 nav ul li a{
     text-decoration: none;
-    align-items: end;
+    color:#333;
+    font-weight: 500;
+    position: relative;
+    transition: 0.3s ease;
     font-size: 20px;
 }
+
+nav ul{
+    display: flex;
+    gap:60px;
+    list-style: none;
+}
+
 
 #theme-toggle{
     padding:15px 25px;
