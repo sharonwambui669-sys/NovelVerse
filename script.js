@@ -164,3 +164,4 @@ newsletterForm.addEventListener("submit", function(event) {
 const navLinks = document.querySelectorAll("nav ul li a");
 
 navLinks.forEach(function(link) {
+    
