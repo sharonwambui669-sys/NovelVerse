@@ -61,6 +61,46 @@ readButtons.forEach(function(button) {
     });
 });
 
+// Wait for the DOM to fully load
+document.addEventListener('DOMContentLoaded', () => {
+    const contactForm = document.getElementById('contactForm');
+
+    // Listen for the form submission
+    contactForm.addEventListener('submit', function(event) {
+        // 1. Prevent the default page refresh
+        event.preventDefault();
+
+        // 2. Grab the values from the input fields
+        const fullName = document.getElementById('full-name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const phone = document.getElementById('phone').value.trim();
+        const message = document.getElementById('message').value.trim();
+
+        // 3. Simple validation check (HTML 'required' handles most of this, but it's good backup)
+        if (!fullName || !email || !message) {
+            alert('Please fill out all required fields.');
+            return;
+        }
+
+        // 4. Create an object with the data (ready to send to a server/API)
+        const formData = {
+            fullName: fullName,
+            email: email,
+            phone: phone,
+            message: message
+        };
+
+        // For now, let's log it to the console to make sure it works
+        console.log('Form Submitted Successfully!', formData);
+
+        // 5. Show a success message to the user
+        alert(`Thank you, ${fullName}! Your message has been sent.`);
+
+        // 6. Clear the form fields after submission
+        contactForm.reset();
+    });
+});
+
 // ===============================
 // Add To Library Buttons
 // ===============================
@@ -75,62 +115,6 @@ libraryButtons.forEach(function(button) {
 
         alert("Book added to library");
     });
-});
-
-// ===============================
-// Contact Form Validation
-// ===============================
-
-const contactForm = document.querySelector(".contact-form");
-
-contactForm.addEventListener("submit", function(event) {
-
-    event.preventDefault();
-
-    const name =
-    document.querySelector("input[type='text']").value;
-
-    const email =
-    document.querySelector("input[type='email']").value;
-
-    const phone =
-    document.querySelector("input[type='tel']").value;
-
-    const message =
-    document.querySelector("textarea").value;
-
-    if (name === "") {
-
-        alert("Please enter your name.");
-        return;
-    }
-
-    if (email === "") {
-
-        alert("Please enter your email.");
-        return;
-    }
-
-    if (!email.includes("@")) {
-
-        alert("Please enter a valid email.");
-        return;
-    }
-
-    if (phone === "") {
-          alert("Please enter your phone number.");
-        return;
-    }
-
-    if (message === "") {
-
-        alert("Please write your message.");
-        return;
-    }
-
-    alert("Message sent successfully.");
-
-    contactForm.reset();
 });
 
 // ===============================
