@@ -10,26 +10,8 @@
 
 body{
     font-family:Arial, sans-serif;
-    background-color:#f5f5f5;
-    color:#333;
-    line-height:1.6;
-}
-
-/* =========================
-/* =========================
-   GLOBAL STYLING
-========================= */
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-body{
-    font-family:Arial, sans-serif;
-    background-color:#f5f5f5;
-    color:#333;
+    background-color:#381212;
+    color:#6276ad;
     line-height:1.6;
 }
 
@@ -41,7 +23,7 @@ header{
     background:
     linear-gradient(rgba(0,0,0,0.6),
     rgba(0,0,0,0.6)),
-    url("images/library.jpg");
+    url("images/novel1.jpg");
 
     background-size:cover;
     background-position:center;
@@ -79,7 +61,7 @@ nav ul{
 
 nav ul li a{
     text-decoration:none;
-    color:white;
+    color:rgb(228, 213, 213);
     font-size:22px;
     font-weight:500;
     position:relative;
