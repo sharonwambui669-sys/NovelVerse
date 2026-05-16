@@ -208,7 +208,7 @@ nav ul li a.active::after{
 ========================= */
 
 #genres{
-    background-color:#edf2f4;
+    background-color:#471f1f;
     padding:80px 40px;
     text-align:center;
 }
@@ -351,8 +351,8 @@ nav ul li a.active::after{
     padding:15px 20px;
     border:none;
 
-    background-color:#1e1e2f;
-    color:white;
+    background-color:#36151a;
+    color:rgb(180, 166, 166);
 
     border-radius:5px;
     cursor:pointer;
@@ -426,3 +426,195 @@ footer{
     color:white;
 }
 
+/* =========================
+   LARGE SCREENS
+========================= */
+
+@media (max-width:1200px){
+
+    nav ul{
+        gap:40px;
+    }
+
+    .hero-text h1{
+        font-size:60px;
+    }
+
+    .hero-text p{
+        font-size:20px;
+    }
+}
+
+/* =========================
+   LAPTOPS
+========================= */
+
+@media (max-width:992px){
+
+    header{
+        padding:20px;
+    }
+
+    nav ul{
+        gap:30px;
+    }
+
+    nav ul li a{
+        font-size:20px;
+    }
+
+    .hero-text h1{
+        font-size:50px;
+    }
+
+    .hero-text p{
+        font-size:18px;
+    }
+
+    .book-container,
+    .book-list{
+        grid-template-columns:
+        repeat(2,1fr);
+    }
+}
+
+/* =========================
+   TABLETS
+========================= */
+
+@media (max-width:768px){
+
+    header{
+        height:auto;
+        padding:40px 20px;
+    }
+
+    nav{
+        position:relative;
+        top:0;
+        margin-bottom:40px;
+    }
+
+    nav ul{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    nav ul li a{
+        font-size:18px;
+    }
+
+    .hero-text h1{
+        font-size:40px;
+    }
+
+    .hero-text p{
+        font-size:16px;
+    }
+
+    .hero-text input{
+        width:100%;
+        margin-bottom:15px;
+    }
+
+    .hero-text button{
+        width:100%;
+    }
+
+    .book-container,
+    .book-list{
+        grid-template-columns:1fr;
+    }
+
+    .genre-container{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .genre-card{
+        width:90%;
+    }
+
+    .contact-form{
+        padding:25px;
+    }
+
+    .footer-content{
+        grid-template-columns:1fr;
+        text-align:center;
+    }
+}
+
+/* =========================
+   SMALL PHONES
+========================= */
+
+@media (max-width:576px){
+
+    .hero-text h1{
+        font-size:32px;
+    }
+
+    .hero-text p{
+        font-size:15px;
+    }
+
+    nav ul li a{
+        font-size:16px;
+    }
+
+    .featured-books h2,
+    #genres h2,
+    #books h2,
+    #contact h2{
+        font-size:32px;
+    }
+
+    .book-card,
+    .book-item{
+        width:100%;
+    }
+
+    .hero-text input{
+        padding:12px;
+    }
+
+    .hero-text button{
+        padding:12px;
+    }
+
+    .contact-form{
+        padding:20px;
+    }
+}
+
+/* =========================
+   EXTRA SMALL DEVICES
+========================= */
+
+@media (max-width:400px){
+
+    .hero-text h1{
+        font-size:26px;
+    }
+
+    .hero-text p{
+        font-size:14px;
+    }
+
+    nav ul{
+        gap:15px;
+    }
+
+    nav ul li a{
+        font-size:15px;
+    }
+
+    .genre-card{
+        padding:20px;
+    }
+
+    .contact-form{
+        padding:15px;
+    }
+}
