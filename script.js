@@ -277,3 +277,54 @@ if (currentHour < 12) {
 } else if (currentHour < 18) {
 
     console.log("Good Afternoon Reader");
+} else {
+
+    console.log("Good Evening Reader");
+}
+
+// ===============================
+// Random Book Suggestion
+// ===============================
+
+const books = [
+
+    "The Lost World",
+    "Dark Secrets",
+    "Galaxy Warriors",
+    "Broken Memories",
+    
+];
+
+function suggestBook() {
+
+    const randomIndex =
+    Math.floor(Math.random() * books.length);
+
+    console.log(
+        `Suggested Book: ${books[randomIndex]}`
+    );
+}
+
+suggestBook();
+
+// ===============================
+// Footer Year Update
+// ===============================
+
+const footerText =
+document.querySelector(".footer-bottom p");
+
+const currentYear =
+new Date().getFullYear();
+
+footerText.textContent =
+`© ${currentYear} NovelVerse. All rights reserved.`;
+
+// ===============================
+// Website Welcome Message
+// ===============================
+
+window.addEventListener("load", function () {
+
+    console.log("Welcome to NovelVerse");
+});
