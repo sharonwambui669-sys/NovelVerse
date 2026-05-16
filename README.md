@@ -37,6 +37,9 @@ Genre filtering
 Scroll to top button
 Dynamic footer year
 Smooth scrolling
+# Installation
+To open project: cd NOVELVERSE
+To view project: https://sharonwambui669-sys.github.io/NovelVerse/
 ## Future Improvements
 User accounts
 Online reading feature
