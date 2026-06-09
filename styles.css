@@ -100,41 +100,89 @@ nav ul li a.active::after{
 }
 
 /* =========================
-   HERO CONTENT
+   HERO CONTAINER (The Wrapper)
+========================= */
+.hero {
+    display: flex;
+    justify-content: center;  /* Centers content horizontally */
+    align-items: center;      /* Centers content vertically */
+    min-height: 80vh;         /* Gives the section substantial height to notice the centering */
+    width: 100%;
+    text-align: center;
+}
+
+/* =========================
+   HERO CONTENT 
+========================= */
+.hero-text {
+    display: flex;
+    flex-direction: column;  
+    align-items: center;      
+    justify-content: center;
+    max-width: 800px;         
+    margin: 0 auto;
+}
+
+.hero-text h1, 
+.hero-text h2 {
+    font-size: 70px;
+    margin-bottom: 20px;
+    padding: 0 20px;
+    color: #ffffff;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+.hero-text p {
+    font-size: 22px;
+    margin-bottom: 30px;
+    max-width: 700px;
+    padding: 0 20px;
+    color: #e4d5d5;
+}
+
+/* =========================
+   SEARCH BAR ACTION BLOCK
 ========================= */
 
-.hero-text h1{
-    font-size:70px;
-    margin-bottom:20px;
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    max-width: 500px;
+    padding: 0 20px;
 }
 
-.hero-text p{
-    font-size:22px;
-    margin-bottom:30px;
-    max-width:700px;
+.hero-text input {
+    width: 300px;
+    padding: 15px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
 }
 
-/* Search Bar */
-
-.hero-text input{
-    padding:15px;
-    width:300px;
-    border:none;
-    border-radius:5px;
-    outline:none;
+.hero-text input:focus {
+    border-color: #ffb703;
 }
 
-.hero-text button{
-    padding:15px 25px;
-    border:none;
-    border-radius:5px;
-    background-color:#ffb703;
-    cursor:pointer;
-    transition:0.3s ease;
+.hero-text button {
+    padding: 15px 25px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffb703;
+    color: #000000;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
 }
 
-.hero-text button:hover{
-    background-color:white;
+.hero-text button:hover {
+    background-color: white;
+    color: #000000;
 }
 
 /* =========================
